@@ -1,59 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--BELOW: xhtml1-transitional.dtd: Preferred DOCTYPE for html client rendering -->
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--BELOW: compatibility tag for Internet Explorer and Microsoft edge web browser -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="color-scheme" content="light dark">
-   <meta name="supported-color-schemes" content="light dark">
-	<title>HTML Email Template Project</title>
+   <!-- BELOW x2: meta tags for dark mode -->
+   <!-- <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark"> -->
+   <title>HTML Email Template Project</title>
    <style type="text/css">
-   	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-		@media screen and (max-width: 599.98px) {
+      @media screen and (max-width: 599.98px) {}
 
-      }
-      @media screen and (max-width: 399.98px) {
-
-      }
+      @media screen and (max-width: 399.98px) {}
 
       /* Custom Dark Mode Colors */
 
-      @media (prefers-color-scheme: dark) {
-
-      }
-	</style>
+      @media (prefers-color-scheme: dark) {}
+   </style>
 </head>
-<body>
+
+<body style="margin: 0; padding: 0; min-width:100%; background-color:#dde0e1;">
+   <!--NOTE: The body gray background won't work with outlook or IE, so we need to 
+      add a conditional statement to render something different. Same with font family...
+      CHECK LINK BELOW FOR MORE INFO: 
+      https://stackoverflow.design/email/base/mso/ -->
+
+      <!--[if (gte mso 9)|(IE)]> 
+         <style type="text/css">
+            body {background-color: #dde0e1!important;}
+            body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
+         </style>
+      <! [endif]-->
 
 
-<!-- START SOCIAL ICONS -->
-<!-- END SOCIAL ICONS -->
 
-<!-- START LOGO -->
-<!-- END LOGO -->
+   <h1>ciao</h1>
 
-<!-- START BANNER -->
-<!-- END BANNER -->
+   <!-- START SOCIAL ICONS -->
+   <!-- END SOCIAL ICONS -->
 
-<!-- START TWO COLUMNS -->
-<!-- END TWO COLUMNS -->
+   <!-- START LOGO -->
+   <!-- END LOGO -->
 
-<!-- START TWO THIRDS COLUMNS -->
-<!-- END TWO THIRDS COLUMNS -->
+   <!-- START BANNER -->
+   <!-- END BANNER -->
 
-<!-- START THREE COLUMNS -->
-<!-- END THREE COLUMNS -->
+   <!-- START TWO COLUMNS -->
+   <!-- END TWO COLUMNS -->
 
-<!-- START FOUR COLUMNS -->
-<!-- END FOUR COLUMNS -->
+   <!-- START TWO THIRDS COLUMNS -->
+   <!-- END TWO THIRDS COLUMNS -->
 
-<!-- START GREEN BORDER -->
-<!-- END GREEN BORDER -->
+   <!-- START THREE COLUMNS -->
+   <!-- END THREE COLUMNS -->
 
-<!-- START FOOTER -->
-<!-- END FOOTER -->
+   <!-- START FOUR COLUMNS -->
+   <!-- END FOUR COLUMNS -->
+
+   <!-- START GREEN BORDER -->
+   <!-- END GREEN BORDER -->
+
+   <!-- START FOOTER -->
+   <!-- END FOOTER -->
 
 
 </body>
+
 </html>
