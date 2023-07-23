@@ -86,16 +86,51 @@
             <td style="padding: 0;">
          <! [endif]-->
 
-         <table align="center" style="border-spacing: 0; color:#565656; font-family:'Lato', sans-serif, Arial, Helvetica!important; 
-            background-color: #fafdfe; margin: 0; padding:0; width:100; max-width: 600px;" role="presentation">
+         <table align="center" style=" border-spacing: 0; color:#565656; font-family:'Lato', sans-serif, Arial, Helvetica!important; 
+            background-color: #fafdfe; margin: 0; padding:0; width:100%; max-width: 600px;" role="presentation">
             <!-- ABOVE ROLE="PRESENTATION" is for accessibility, so that the screen reader doesn't try to interpret HTML
                    inside of HTML email templates and it focuses on the content instead of the table tags.
                    If the tables are not set to “presentation,” the screen reader will interpret the table as data, 
                    which means it will read out the HTML code to the user.
                   https://www.emailonacid.com/blog/article/email-development/why-should-i-set-my-table-role-as-presentation/ -->
 
-            <h1>ciao</h1>
             <!-- START SOCIAL ICONS -->
+            <tr>
+               <td style="padding: 0;">
+                  <table width="100%" style="border-spacing: 0;" role="presentation">
+
+                     <tr>
+                        <td height="3" style="background-color: #21c6b8;"></td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #ebf5fa;text-align: center;padding: 10px 0 8px 0;">
+                           <a href="https://example.com" target="_blank">
+                              <img src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook Logo"
+                                 title="Facebook" width="32" border="0"></a>
+                           <!-- FOR THESE SOCIAL LOGO IMG: border=0 is to avoid borders around the logo 
+                                 img for email client "Lotus Notes 8.5" - a super old windows email client. 
+                            -->
+                           <a href="https://example.com" target="_blank">
+                              <img src="https://i.ibb.co/sRH7TK2/circle-twitter.png" alt="Twitter Logo" width="32"
+                                 border="0"></a>
+                           <a href="https://example.com" target="_blank">
+                              <img src="https://i.ibb.co/VQ9nCv3/circle-youtube.png" alt="Youtube Logo" width="32"
+                                 border="0"></a>
+                           <a href="https://example.com" target="_blank"><img
+                                 src="https://i.ibb.co/K5wbWBS/circle-linkedin.png" alt="Linkedin Logo" width="32"
+                                 border="0"></a>
+                           <a href="https://example.com" target="_blank"><img
+                                 src="https://i.ibb.co/x8G1NMz/circle-instagram.png" alt="Instagram Logo" width="32"
+                                 border="0"></a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td height="3" style="background-color: #21c6b8;"></td>
+                     </tr>
+
+                  </table>
+               </td>
+            </tr>
             <!-- END SOCIAL ICONS -->
 
             <!-- START LOGO -->
