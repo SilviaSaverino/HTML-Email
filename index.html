@@ -18,6 +18,22 @@
    <style type="text/css">
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+      table {
+         border-spacing: 0;
+      }
+
+      td {
+         padding: 0;
+      }
+
+      p {
+         font-size: 15px;
+      }
+
+      img {
+         border: 0;
+      }
+
       @media screen and (max-width: 599.98px) {}
 
       @media screen and (max-width: 399.98px) {}
@@ -26,6 +42,15 @@
 
       @media (prefers-color-scheme: dark) {}
    </style>
+
+   <!--[if (gte mso 9)|(IE)]> 
+         <style type="text/css">
+            table {border-collapse: collapse!important;}
+         </style>
+   <! [endif]-->
+   <!-- ABOVE: border-collapse: collapse!important; this table style will avoid to 
+      have any spacing around our banner image in Windows and Outlook email clients -->
+
 </head>
 
 <body style="margin: 0; padding: 0; min-width:100%; background-color:#dde0e1;">
@@ -39,7 +64,7 @@
             body {background-color: #dde0e1!important;}
             body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
          </style>
-      <! [endif]-->
+   <! [endif]-->
 
    <center style="width: 100%; table-layout: fixed; background-color:#dde0e1; padding-bottom: 40px; ">
       <div style="max-width: 600px; background-color: #fafdfe; box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
@@ -50,38 +75,58 @@
          -->
          <div style="font-size: 0px; color: #fafdfe; line-height: 1px; mso-line-height-rule: exactly;
          display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide:all;">
-         <!-- The above style will ensure that the preheader text will never appear in our email body -->
-         This is our preheader text. Testing it by using PutsEmail website! SALE 25% OFF!
+            <!-- The above style will ensure that the preheader text will never appear in our email body -->
+            This is our preheader text. Testing it by using PutsEmail website! SALE 25% OFF!
          </div>
          <!-- END OF PREHEADER TEXT -->
 
+         <!--[if (gte mso 9)|(IE)]> 
+            <table width="600" align="center" style="border-spacing: 0; color: #565656; role="presentation">
+            <tr>
+            <td style="padding: 0;">
+         <! [endif]-->
 
-         <!-- START SOCIAL ICONS -->
-         <!-- END SOCIAL ICONS -->
+         <table align="center" style="border-spacing: 0; color:#565656; font-family:'Lato', sans-serif, Arial, Helvetica!important; 
+            background-color: #fafdfe; margin: 0; padding:0; width:100; max-width: 600px;" role="presentation">
+            <!-- ABOVE ROLE="PRESENTATION" is for accessibility, so that the screen reader doesn't try to interpret HTML
+                   inside of HTML email templates and it focuses on the content instead of the table tags.
+                   If the tables are not set to “presentation,” the screen reader will interpret the table as data, 
+                   which means it will read out the HTML code to the user.
+                  https://www.emailonacid.com/blog/article/email-development/why-should-i-set-my-table-role-as-presentation/ -->
 
-         <!-- START LOGO -->
-         <!-- END LOGO -->
+            <h1>ciao</h1>
+            <!-- START SOCIAL ICONS -->
+            <!-- END SOCIAL ICONS -->
 
-         <!-- START BANNER -->
-         <!-- END BANNER -->
+            <!-- START LOGO -->
+            <!-- END LOGO -->
 
-         <!-- START TWO COLUMNS -->
-         <!-- END TWO COLUMNS -->
+            <!-- START BANNER -->
+            <!-- END BANNER -->
 
-         <!-- START TWO THIRDS COLUMNS -->
-         <!-- END TWO THIRDS COLUMNS -->
+            <!-- START TWO COLUMNS -->
+            <!-- END TWO COLUMNS -->
 
-         <!-- START THREE COLUMNS -->
-         <!-- END THREE COLUMNS -->
+            <!-- START TWO THIRDS COLUMNS -->
+            <!-- END TWO THIRDS COLUMNS -->
 
-         <!-- START FOUR COLUMNS -->
-         <!-- END FOUR COLUMNS -->
+            <!-- START THREE COLUMNS -->
+            <!-- END THREE COLUMNS -->
 
-         <!-- START GREEN BORDER -->
-         <!-- END GREEN BORDER -->
+            <!-- START FOUR COLUMNS -->
+            <!-- END FOUR COLUMNS -->
 
-         <!-- START FOOTER -->
-         <!-- END FOOTER -->
+            <!-- START GREEN BORDER -->
+            <!-- END GREEN BORDER -->
+
+            <!-- START FOOTER -->
+            <!-- END FOOTER -->
+         </table>
+         <!--[if (gte mso 9)|(IE)]>           
+            </td>
+            </tr>
+            </table>
+         <! [endif]-->
       </div>
    </center>
 
