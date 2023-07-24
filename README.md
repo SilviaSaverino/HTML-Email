@@ -4,23 +4,27 @@ Link to [Drew Ryan's Udemy course](https://responsivehtmlemail.com/html-email-co
 
 ### NOTES:
 The following are personal notes for educational purposes only:
-***
+
+#### Line 1:
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ``` 
 - xhtml1-transitional.dtd: Preferred DOCTYPE for html client rendering 
 ***
-
+#### Line 5:
 ```
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
 - Compatibility tag for Internet Explorer and Microsoft edge web browser 
 ***
+#### Line 7, 8:
 ```
-<meta name="color-scheme" content="light dark"> <meta name="supported-color-schemes" content="light dark">
+<meta name="color-scheme" content="light dark"> 
+<meta name="supported-color-schemes" content="light dark">
 ```
 - Meta tags for dark mode
 ***
+#### Line 39:
 ```
 <!--[if (gte mso 9)|(IE)]> 
          <style type="text/css">
@@ -30,6 +34,7 @@ The following are personal notes for educational purposes only:
 ```
 - About border-collapse: collapse!important; this table style will avoid to have any spacing around our banner image in Windows and Outlook email clients
 *** 
+#### Line 46, 48:
 ```
 <body style="margin: 0; padding: 0; min-width:100%; background-color:#dde0e1;">
    
@@ -45,6 +50,7 @@ add a conditional statement to render something different. Same with font family
 Follow link for more info: 
 https://stackoverflow.design/email/base/mso/ 
 ***
+#### Line 59:
 ```
 <div 
 style="font-size: 0px; color: #fafdfe; line-height: 1px; mso-line-height-rule: exactly;
@@ -57,6 +63,7 @@ The purpose of the preheader text is to provide recipients with a glimpse of the
 Should be around 85-100 chars.
 The above style will ensure that the preheader text will never appear in our email body
 ***
+#### Line 73:
 ```
 <table align="center" style=" border-spacing: 0; color:#565656; font-family:'Lato', sans-serif, Arial, Helvetica!important; 
             background-color: #fafdfe; margin: 0; padding:0; width:100%; max-width: 600px;" role="presentation">
@@ -65,6 +72,7 @@ The above style will ensure that the preheader text will never appear in our ema
 If the tables are not set to “presentation,” the screen reader will interpret the table as data, which means it will read out the HTML code to the user.
 https://www.emailonacid.com/blog/article/email-development/why-should-i-set-my-table-role-as-presentation/ 
 ***
+#### Line 89:
 ```
 <a href="https://example.com" target="_blank">
     <img src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook Logo"
@@ -73,6 +81,7 @@ https://www.emailonacid.com/blog/article/email-development/why-should-i-set-my-t
 - For these social logo images "border=0" is to avoid borders around the logo 
 img for email client "Lotus Notes 8.5" - a super old windows email client. 
 ***
+#### Line 131, 134 :
 ```
 <td background="https://i.ibb.co/hMhVbjT/stats2.gif" width="600" height="332"
                   style="background-position: center top;">
@@ -100,6 +109,7 @@ This is another VML element that specifies how the rectangle should be filled. I
 This is a VML element for adding text within the rectangle. The inset attribute defines the margins or padding for the text inside the rectangle 
                 
 ***
+#### Line 219:
 ```
 <td>
     <a href="https://example.com" target="_blank"><img
