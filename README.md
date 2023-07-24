@@ -1,108 +1,115 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# HTML Email project:
+This project had been built following Drew Ryan course on HTML Email.
+Link to [Drew Ryan's Udemy course](https://responsivehtmlemail.com/html-email-course/)
 
-Welcome USER_NAME,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### NOTES:
+The following are personal notes for educational purposes only:
+***
+```
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+``` 
+- xhtml1-transitional.dtd: Preferred DOCTYPE for html client rendering 
+***
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
+- Compatibility tag for Internet Explorer and Microsoft edge web browser 
+***
+```
+<meta name="color-scheme" content="light dark"> <meta name="supported-color-schemes" content="light dark">
+```
+- Meta tags for dark mode
+***
+```
+<!--[if (gte mso 9)|(IE)]> 
+         <style type="text/css">
+            table {border-collapse: collapse!important;}
+         </style>
+   <! [endif]-->
+```
+- About border-collapse: collapse!important; this table style will avoid to have any spacing around our banner image in Windows and Outlook email clients
+*** 
+```
+<body style="margin: 0; padding: 0; min-width:100%; background-color:#dde0e1;">
+   
+   <!--[if (gte mso 9)|(IE)]> 
+         <style type="text/css">
+            body {background-color: #dde0e1!important;}
+            body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
+         </style>
+   <! [endif]-->
+```  
+- The grey body background won't work with Outlook or IE, so we need to 
+add a conditional statement to render something different. Same with font family...
+Follow link for more info: 
+https://stackoverflow.design/email/base/mso/ 
+***
+```
+<div 
+style="font-size: 0px; color: #fafdfe; line-height: 1px; mso-line-height-rule: exactly;
+display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide:all;">
+    This is our preheader text. Testing it by using PutsEmail website! SALE 25% OFF!
+</div>
+```
+- Preheader text is visible right after or below the subject line in the recipient's email inbox. 
+The purpose of the preheader text is to provide recipients with a glimpse of the email's content.
+Should be around 85-100 chars.
+The above style will ensure that the preheader text will never appear in our email body
+***
+```
+<table align="center" style=" border-spacing: 0; color:#565656; font-family:'Lato', sans-serif, Arial, Helvetica!important; 
+            background-color: #fafdfe; margin: 0; padding:0; width:100%; max-width: 600px;" role="presentation">
+```
+- ROLE="PRESENTATION" is for accessibility, so that the screen reader doesn't try to interpret HTML inside of HTML email templates and it focuses on the content instead of the table tags.
+If the tables are not set to “presentation,” the screen reader will interpret the table as data, which means it will read out the HTML code to the user.
+https://www.emailonacid.com/blog/article/email-development/why-should-i-set-my-table-role-as-presentation/ 
+***
+```
+<a href="https://example.com" target="_blank">
+    <img src="https://i.ibb.co/bPLzh61/circle-facebook.png" alt="Facebook Logo"
+        title="Facebook" width="32" border="0"></a>
+```
+- For these social logo images "border=0" is to avoid borders around the logo 
+img for email client "Lotus Notes 8.5" - a super old windows email client. 
+***
+```
+<td background="https://i.ibb.co/hMhVbjT/stats2.gif" width="600" height="332"
+                  style="background-position: center top;">
+```
+- The above banner background image is going to be missing on a number of clients.
+So to solve the problem will need to turn to something called vector markup language VML used to deliver vector graphics. Below snippet...
+https://learn.microsoft.com/en-us/windows/win32/vml/web-workshop---specs---standards----introduction-to-vector-markup-language--vml-
 
-**Anything more?**
+```
+<!--[if (gte mso 9)|(IE)]> 
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true"
+            stroke="false" style="width:600px";height=332px>
+            <v:fill type="tile" src="https://i.ibb.co/hMhVbjT/stats2.gif" />
+            <v:textbox inset=" 0,0,0,0">
+    <! [endif]-->
+```
+- v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px"; height=332px>
+This is an HTML-like code that creates a rectangle using the Vector Markup Language(VML). 
+VML was an XML-based language used to create vector graphics in older versions of Microsoft Internet Explorer (IE). In this case, the rectangle has a width of 600 pixels and a height of 332 pixels. The fill="true" attribute means that the rectangle will be filled with a color or pattern, and the stroke="false" attribute means that the rectangle won't have an outline or border.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- v:fill type="tile" src="https://i.ibb.co/hMhVbjT/stats2.gif" />
+This is another VML element that specifies how the rectangle should be filled. It uses a tiled pattern fill, meaning it will repeat an image to fill the rectangle. So, the rectangle will be filled with a repeating pattern from the provided GIF image.
 
----
+- v:textbox inset=" 0,0,0,0">
+This is a VML element for adding text within the rectangle. The inset attribute defines the margins or padding for the text inside the rectangle 
+                
+***
+```
+<td>
+    <a href="https://example.com" target="_blank"><img
+        src="https://i.ibb.co/Tmg3qbV/man-teal.jpg"
+        alt="man leaning against blue-ish brick wall" width="260" border="0"
+        style="max-width: 260px; border-radius:8px;"></a>
+</td>
+```
+- Above width will be 260 and not 300 'cause we are taking into consideration our padding:20px on each side. Check td with class padding
 
-Happy coding!
+                                                
+                                          
+                           
