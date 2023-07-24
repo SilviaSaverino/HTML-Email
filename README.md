@@ -109,6 +109,12 @@ This is another VML element that specifies how the rectangle should be filled. I
 This is a VML element for adding text within the rectangle. The inset attribute defines the margins or padding for the text inside the rectangle 
                 
 ***
+#### Line 210:
+```
+<table class="column" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 300px;display: inline-block;"role="presentation">
+```
+- "vertical-align: top" and "display: inline block" in both table in two-columns section, will make so that those table will appear next to one another;
+***
 #### Line 219:
 ```
 <td>
