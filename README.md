@@ -2,6 +2,9 @@
 This project had been built following Drew Ryan course on HTML Email.
 Link to [Drew Ryan's Udemy course](https://responsivehtmlemail.com/html-email-course/)
 
+### Live Site:
+Check out the project [Live Site](https://silviasaverino.github.io/HTML-Email/)
+
 ### NOTES:
 The following are personal notes for educational purposes only:
 
