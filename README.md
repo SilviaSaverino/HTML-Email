@@ -126,6 +126,8 @@ This is a VML element for adding text within the rectangle. The inset attribute 
 ```
 - Above width will be 260 and not 300 'cause we are taking into consideration our padding:20px on each side. Check td with class padding
 
-                                                
-                                          
-                           
+#### Line 734:
+```
+ <a href="tel:07123456789" style="text-decoration:none;color:#e8fbfa;">07123456789</a>
+```                                                                               
+- When a user interacts with this link by clicking on it, it will trigger the device's default phone application to initiate a call to the specified number (07123456789). The tel: prefix in the href attribute informs the browser that this is a telephone link and should be handled as such.                         
